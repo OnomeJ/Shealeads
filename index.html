@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sSheleads.africa</title>
+  <title>Sheleads.africa</title>
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="bootstrap.js">
   <link rel="stylesheet" href="index.css">
@@ -14,44 +14,49 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light w-100 px-5 bg-light fixed-top position-relative" id="mainnav">
-    <div class="container-fluid ps-5 " id="imglogo">
-      <a class="navbar-brand ms-0 ps- " href="#">
-        <img src="images/sheleadpix01.png" alt="" width="130" height="50" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#setnav"
-        aria-controls="setnav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4 ps-5" href="#">
+        <img src="images/sheleadpix01.png"  alt="Logo" width="130" height="50" m class="d-inline-block align-text-top" >
+         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse ms- ps-3" id="setnav">
-        <ul class="navbar-nav nav-pills  mx-auto mb-2 mb-lg-0">
-          <li class="nav-item " id="home2">
-            <a class="nav-link text-dark ms- ps- me-1" id="home1" href="#"><b>ABOUT US</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark me-2" href="#"><b>PROGRAM</b></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-dark me-2" href="#"><b>EVENTS</b></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-dark me-2" href="#"><b>CAREERS</b></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-dark me-2" href="#"><b>RESOURCES</b></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-dark me-2" href="#"><b>COMMUNITY</b></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link active text-light" aria-current="page" href="#"><b>JOIN NOW</b></a>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-start  " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav nav-pills ps-5 me-5 mx-auto mb-2 mb-lg-0">
+              <li class="nav-item " id="home2">
+                <a class="nav-link text-dark ms- ps- me-1" id="home1" href="#"><b>ABOUT US</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark me-2" href="#"><b>PROGRAM</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark me-2" href="#"><b>EVENTS</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark me-2" href="#"><b>CAREERS</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark me-2" href="#"><b>RESOURCES</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-dark me-2" href="#"><b>COMMUNITY</b></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active text-light" aria-current="page" href="#"><b>JOIN NOW</b></a>
+              </li>
+            </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    </div>
   </nav>
-
+  
   <div id="carouselExampleCaptions" class="carousel slide position-relative col-12  d-md-block w-100 mt- pt-1">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -63,7 +68,7 @@
       <div class="carousel-item active" style="height: vh;">
         <img src="images/sheleadpix02.webp" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block ">
-          <h1 class="fw-bold">#1 destination for smart
+          <h1 class="fw-bold" id="destination">#1 destination for smart
             and <br>ambitious African women</h1>
           <a href="#" class="btn btn-primary fw-bolder">JOIN NOW</a>
         </div>
